@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="shortcut icon" href="../img/logo.jpg" type="image/x-icon">
+    <title>Responsive Form Design with Tailwind CSS</title>
+</head>
+<body>
+    <!-- w-screen h-screen flex justify-center items-center -->
+    <div class="font-serif md:w-screen md:h-screen flex justify-center items-center bg-[#ECF0F1]">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 p-7 rounded-md bg-white">
+            <div class="w-full md:w-1/2 bg-[#E2ECFF] px-10 py-10 lg:px-20 rounded-lg flex flex-col items-center justify-center">
+                <img class="w-32 mx-auto rounded-xl" src="../img/logo.jpg" alt="Coming soon..">
+                <h1 class="font-bold text-[36px] leading-[54px] text-[#3C3C3C] text-center mt-12 mb-5">Let us help you run your own platform</h1>
+                <p class="text-[18px] leading-[27px] text-center font-medium">Our registration process is quicker than other edtech platform</p>
+            </div>
+            <div class="w-full md:w-1/2 flex flex-col gap-3">
+                <h1 class="font-bold text-4xl text-center">Get Started</h1>
+                <p class="text-[#3C3C3C] mb-5 text-center">Create your account now!</p>
+                <form>
+                    <div class="mb-5">
+                        <label class="text-[#3C3C3C] text-[22px] block mb-2" for="fName">Full Name</label>
+                        <input class="w-full py-3 px-3 rounded border border-grey-500 focus:outline-none" type="text" id="fName" placeholder="Type your name">
+                    </div>
+                    <div class="mb-5">
+                        <label class="text-[#3C3C3C] text-[22px] block mb-2" for="email">Email</label>
+                        <input class="w-full py-3 px-3 rounded border border-grey-500 focus:outline-none" type="text" id="email" placeholder="Type your email">
+                    </div>
+                    <div class="mb-5">
+                        <label class="text-[#3C3C3C] text-[22px] block mb-2" for="password">Password</label>
+                        <input class="w-full py-3 px-3 rounded border border-grey-500 focus:outline-none" type="text" id="password" placeholder="Type your password">
+                    </div>
+                    <button class="w-full bg-[#0082DF] py-3 rounded font-bold text-white">Sign up</button>
+                    <p class="text-center mt-10">Already a member? <span class="text-[#0082DF] font-bold">Sign in</span></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
